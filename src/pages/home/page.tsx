@@ -192,7 +192,7 @@ export default function Home() {
               Heli Kothari
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Full-Stack Developer • Cloud Automation • Machine Learning • Software Engineer
+              Full-Stack Developer • Cloud Automation • Machine Learning 
             </p>
           </div>
           
@@ -358,39 +358,39 @@ export default function Home() {
 
       {/* Experience Section */}
       <section id="experience" className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Experience</h2>
-            <p className="text-gray-600">My professional journey and academic contributions</p>
-          </div>
+  <div className="max-w-4xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-800 mb-4">Experience</h2>
+      <p className="text-gray-600">My professional journey and academic contributions</p>
+    </div>
 
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-teal-200"></div>
-            
-            {experiences.map((exp, index) => (
-              <div key={index} className={`relative flex items-center mb-12 ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                {/* Timeline dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-teal-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                
-                {/* Content card */}
-                <div className={`w-5/12 ${index % 2 === 0 ? 'pr-8' : 'pl-8'}`}>
-                  <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                    <div className="flex items-start gap-4 mb-4">
-                      <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <i className="ri-briefcase-line text-teal-600 text-xl"></i>
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-gray-800 mb-1">{exp.title}</h3>
-                        <p className="text-teal-600 font-medium text-sm mb-2">{exp.company}</p>
-                        <p className="text-gray-500 text-sm">{exp.period}</p>
-                      </div>
-                    </div>
-                    <ul className="space-y-2">
-                      {exp.description.map((item, idx) => (
-                        <li key={idx} className="text-gray-600 text-sm leading-relaxed flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
-                          {item}
+    <div className="relative">
+      {/* Timeline line - hidden on mobile */}
+      <div className="hidden md:block absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-teal-200"></div>
+      
+      {experiences.map((exp, index) => (
+        <div key={index} className={`relative flex items-center mb-8 md:mb-12 ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'}`}>
+          {/* Timeline dot - hidden on mobile */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-teal-500 rounded-full border-4 border-white shadow-lg z-10"></div>
+          
+          {/* Content card */}
+          <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:pr-8' : 'md:pl-8'}`}>
+            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i className="ri-briefcase-line text-teal-600 text-xl"></i>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-1">{exp.title}</h3>
+                  <p className="text-teal-600 font-medium text-sm mb-2">{exp.company}</p>
+                  <p className="text-gray-500 text-sm">{exp.period}</p>
+                </div>
+              </div>
+              <ul className="space-y-2">
+                {exp.description.map((item, idx) => (
+                  <li key={idx} className="text-gray-600 text-sm leading-relaxed flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"></span>
+                    <span className="flex-1">{item}</span>
                         </li>
                       ))}
                     </ul>
@@ -528,10 +528,7 @@ export default function Home() {
             </div>
             <div className="border-t border-gray-700 pt-6">
               <p className="text-gray-400 text-sm">
-                © 2024 Heli Kothari. All rights reserved. • 
-                <a href="https://readdy.ai/?origin=logo" className="text-teal-400 hover:text-teal-300 ml-1">
-                  Website Builder
-                </a>
+                © 2024 Heli Kothari. All rights reserved. 
               </p>
             </div>
           </div>
