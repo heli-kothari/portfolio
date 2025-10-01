@@ -404,110 +404,62 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">Get In Touch</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Let's discuss opportunities and collaborate on exciting projects
-            </p>
+  <div className="max-w-4xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-800 mb-6">Get In Touch</h2>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Let's discuss opportunities and collaborate on exciting projects
+      </p>
+    </div>
+
+    <div className="max-w-2xl mx-auto">
+      <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">Let's Connect</h3>
+      <p className="text-gray-600 mb-8 leading-relaxed text-center">
+        I'm always open to discussing new opportunities, interesting projects, or just having 
+        a conversation about technology and innovation. Feel free to reach out!
+      </p>
+      
+      <div className="space-y-6">
+        <div className="flex items-center gap-4 bg-gray-50 p-6 rounded-2xl">
+          <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i className="ri-mail-line text-teal-600 text-xl"></i>
           </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-6">Let's Connect</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
-                I'm always open to discussing new opportunities, interesting projects, or just having 
-                a conversation about technology and innovation. Feel free to reach out!
-              </p>
-              
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center">
-                    <i className="ri-mail-line text-teal-600 text-xl"></i>
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-800">Email</p>
-                    <p className="text-gray-600">helikothari26@gmail.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <i className="ri-linkedin-fill text-blue-600 text-xl"></i>
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-800">LinkedIn</p>
-                    <a href="https://www.linkedin.com/in/heli-kothari-7aa510267/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600">linkedin.com/in/heli-kothari-7aa510267/</a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                    <i className="ri-github-fill text-gray-600 text-xl"></i>
-                  </div>
-                  <div>
-                    <p className="font-medium text-gray-800">GitHub</p>
-                    <a href="https://github.com/heli-kothari" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">github.com/heli-kothari</a>
-                  </div>
-                </div>
-              </div>
-
-              {/* New light green transparent box */}
-              <div className="mt-8 p-6 bg-teal-100/50 rounded-2xl border border-teal-200/30">
-                <p className="text-gray-700 leading-relaxed">
-                  I'm always interested in hearing about new opportunities, projects, and collaborations. 
-                  Whether you have a question or just want to connect, don't hesitate to reach out!
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 p-8 rounded-2xl">
-              <form className="space-y-6" onSubmit={handleFormSubmit} data-readdy-form>
-                <div className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                    <input 
-                      type="text" 
-                      name="name"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                    <input 
-                      type="email" 
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                    <textarea 
-                      rows={5}
-                      name="message"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm resize-none"
-                      placeholder="Tell me about your project or opportunity..."
-                      maxLength={500}
-                    ></textarea>
-                  </div>
-                  <button 
-                    type="submit"
-                    className="w-full px-6 py-3 bg-teal-600 text-white rounded-lg font-medium hover:bg-teal-7 transition-colors whitespace-nowrap flex items-center justify-center gap-2"
-                  >
-                    <i className="ri-send-plane-line"></i>
-                    Send Message
-                  </button>
-                </div>
-              </form>
-            </div>
+          <div>
+            <p className="font-medium text-gray-800">Email</p>
+            <a href="mailto:helikothari26@gmail.com" className="text-gray-600 hover:text-teal-600 transition-colors">helikothari26@gmail.com</a>
           </div>
         </div>
-      </section>
+        
+        <div className="flex items-center gap-4 bg-gray-50 p-6 rounded-2xl">
+          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i className="ri-linkedin-fill text-blue-600 text-xl"></i>
+          </div>
+          <div>
+            <p className="font-medium text-gray-800">LinkedIn</p>
+            <a href="https://www.linkedin.com/in/heli-kothari-7aa510267/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">linkedin.com/in/heli-kothari-7aa510267/</a>
+          </div>
+        </div>
+        
+        <div className="flex items-center gap-4 bg-gray-50 p-6 rounded-2xl">
+          <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <i className="ri-github-fill text-gray-600 text-xl"></i>
+          </div>
+          <div>
+            <p className="font-medium text-gray-800">GitHub</p>
+            <a href="https://github.com/heli-kothari" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 transition-colors">github.com/heli-kothari</a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 p-6 bg-teal-100/50 rounded-2xl border border-teal-200/30">
+        <p className="text-gray-700 leading-relaxed text-center">
+          I'm always interested in hearing about new opportunities, projects, and collaborations. 
+          Whether you have a question or just want to connect, don't hesitate to reach out!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-12">
