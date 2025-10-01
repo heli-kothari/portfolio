@@ -62,12 +62,12 @@ export default defineConfig({
           ]
         }
       ],
-      dts: true,
+      dts: false,
     }),
   ],
   base,
   build: {
-    sourcemap: true,
+    sourcemap: false,
     outDir: 'out',
   },
   resolve: {
