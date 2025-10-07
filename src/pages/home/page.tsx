@@ -70,21 +70,24 @@ export default function Home() {
       technologies: ['PyTorch', 'Python', 'Jupyter', 'NumPy', 'Research'],
       image: 'https://readdy.ai/api/search-image?query=Animated%20environmental%20research%20visualization%20with%20PFAS%20contamination%20data%2C%20machine%20learning%20model%20predictions%2C%20scientific%20charts%20and%20graphs%2C%20environmental%20impact%20assessment%20interface%20with%20green%20and%20blue%20color%20scheme&width=300&height=200&seq=11&orientation=landscape',
       githubUrl: 'private'
-    },
-    {
-      title: 'Cross-Platform Mobile Application',
-      description: 'Developed a comprehensive cross-platform mobile application with real-time synchronization, offline capabilities, and seamless user experience across iOS and Android platforms.',
-      technologies: ['React Native', 'SwiftUI', 'Firebase', 'TypeScript'],
-      image: 'https://readdy.ai/api/search-image?query=Modern%20mobile%20app%20interface%20with%20cross-platform%20design%2C%20sleek%20UI%20components%2C%20real-time%20synchronization%20features%2C%20offline%20capabilities%2C%20animated%20transitions%2C%20clean%20minimalist%20design%20with%20blue%20and%20teal%20gradients&width=500&height=600&seq=6&orientation=portrait',
-      githubUrl: 'private'
     }
   ];
 
   const experiences = [
     {
-      title: 'Computer Science Tutor',
+      title: 'Software Engineer Intern',
+      company: 'Sparx Labs',
+      period: 'June 2025 - Present',
+      description: [
+        'Built a cross-platform educational game app using Kotlin Multiplatform, combining frontend (Jetpack Compose, SwiftUI) and shared backend logic',
+        'Integrated Godot Engine for interactive gameplay and animations',
+        'Developed REST APIs, SQLite caching, and async data flows with Coroutines & Flow',
+        'Supported backend services for authentication and content delivery using Firebase & AWS'
+      ]
+    },{
+      title: 'Computer Science Undergraduate Tutor',
       company: 'University of California, Irvine',
-      period: 'September 2023 - Present',
+      period: 'September 2024 - June 2025',
       description: [
         'Provided one-on-one tutoring for undergraduate students in data structures, algorithms, and software engineering courses',
         'Helped students debug code and understand complex programming concepts',
@@ -92,9 +95,9 @@ export default function Home() {
       ]
     },
     {
-      title: 'Undergraduate Research Assistant',
-      company: 'UCI Machine Learning Lab',
-      period: 'January 2024 - August 2024',
+      title: 'Research Assistant',
+      company: 'Olivaries Lab',
+      period: 'June 2024 - June 2025',
       description: [
         'Conducted research on PFAS contamination prediction using machine learning models',
         'Developed and optimized PyTorch models for environmental data analysis',
@@ -103,23 +106,22 @@ export default function Home() {
       ]
     },
     {
-      title: 'Workshop Facilitator',
-      company: 'UCI Center for Excellence in Writing and Communication',
-      period: 'September 2022 - June 2023',
+      title: 'Facilitator',
+      company: 'Anteater Recreation Center',
+      period: 'March 2023 - June 2025',
       description: [
-        'Led technical writing workshops for 20+ engineering students per session',
-        'Created curriculum for teaching documentation and technical communication skills',
-        'Provided feedback on technical reports and project documentation'
+        'Led 50+ team-building workshops while ensuring high safety standards',
+        'Trained new facilitators on equipment setup, safety drills, and guest engagement',
+        'Maintained a high level of safety compliance by consistently following and enforcing established procedures'
       ]
     },
     {
       title: 'Learning Assistant',
-      company: 'Introduction to Programming Course',
-      period: 'January 2023 - June 2023',
+      company: 'University of California, Irvine',
+      period: 'April 2023 - March 2024',
       description: [
-        'Assisted professor in teaching Python programming to 150+ first-year students',
-        'Conducted weekly lab sessions and office hours for student support',
-        'Graded assignments and provided detailed feedback to improve learning outcomes'
+        'Provided hands-on support for students on Python-based machine learning assignments',
+        'Conducted live code sessions covering data preprocessing, model tuning, and complexity analysis'
       ]
     }
   ];
